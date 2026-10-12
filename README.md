@@ -13,11 +13,19 @@ Un notebook simple qui calcule la VaR à 1 jour et à 95 % d'un portefeuille de 
 
 ## Lancer le notebook
 
+Prérequis : Python 3 et `make`.
+
 ```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/jupyter notebook VaR_Portfolio_B3_Analysis.ipynb
+git clone git@github.com:uxornova/notebook.git
+cd notebook
+make          # installe les dépendances (la 1re fois) puis ouvre le notebook
 ```
+
+Autres commandes :
+- `make html` : exécute tout le notebook et régénère `VaR_Portfolio_B3_Analysis.html`
+- `make clean` : supprime l'environnement virtuel
+
+Dans VS Code : lancer `make install`, ouvrir le notebook, puis choisir le noyau `.venv`.
 
 ## Outils
 
