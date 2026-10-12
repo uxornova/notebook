@@ -1,6 +1,6 @@
 VENV    = .venv
 PYTHON  = $(VENV)/bin/python
-NB      = VaR_Portfolio_B3_Analysis.ipynb
+NB      = VaR_Portefeuille_Suisse.ipynb
 
 all: run
 
